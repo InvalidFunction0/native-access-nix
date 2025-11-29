@@ -18,7 +18,7 @@ in
 , home ? ""
 }:
 let
-  wineBin = "${wine}/bin/wine${if is64bits then "64" else ""}";
+  wineBin = "${wine}/bin/wine";
   requiredPackages = [
     wine
     cabextract
