@@ -30,7 +30,7 @@ let
     # prevent a prompt to install wine-mono on first launch
     embedInstallers = true;
   };
-  wine-bin = "${wine}/bin/wine64";
+  wine-bin = "${wine}/bin/wine";
 
   bin = wrapWine {
     inherit name wine;
